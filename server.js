@@ -4,6 +4,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
+const twilio = require('twilio');
+const client = new twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -23,15 +26,15 @@ app.post('/contact', (req, res) => {
     port: 465,
     secure: true,
     auth: {
-      user: GMAIL_USER,
-      pass: GMAIL_PASS
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS
     }
   });
 
   let mailOptions = {
     from: req.body.email,
-    to: GMAIL_USER,
-    //subject: req.body.subject,
+    to: process.env.GMAIL_USER,
+    subject: `New Contact From Your Web Page`,
     text: req.body.message
   };
 
@@ -39,10 +42,19 @@ app.post('/contact', (req, res) => {
     if (err) {
       console.log(err);
     } else {
-      res.render('index.html');
-      console.log('Message Sent!');
+      // res.render COMFIRMATION MODAL;
+      return console.log('Message Sent!');
+      // ^Sends 2 messages before crashing
     }
   });
+
+
+  client.messages.create({
+    to: process.env.TWILIO_RECIEVER,
+    from: process.env.TWILIO_SENDER,
+    body: `${req.body.email} has expressed interest in contacting you!`
+  });
+
 });
 
 
