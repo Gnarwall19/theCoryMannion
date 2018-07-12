@@ -42,7 +42,8 @@ app.post('/contact', (req, res) => {
     if (err) {
       console.log(err);
     } else {
-      res.render('/views/confirmation.html');
+      console.log(res);
+      // res.render('/views/confirmation.html');
       // res.render COMFIRMATION MODAL;
       // return console.log('Message Sent!');
       // ^Sends 2 messages before crashing

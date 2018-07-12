@@ -1,0 +1,95 @@
+    #navMain {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      font-weight: 700;
+      background-color: #73726C !important;
+    }
+
+    #home,
+    #about {
+      background-color: #7BC6AA !important;
+    }
+
+    #profile-picture {
+      border: solid 2px white;
+    }
+
+    .portfolio-item {
+      border: 1px solid black;
+      margin: 25px;
+    }
+
+    .btn-social {
+      width: 3.25rem;
+      height: 3.25rem;
+      font-size: 1.25rem;
+      line-height: 2rem;
+    }
+
+    .navbar-text {
+      color: #05A2F2 !important;
+      /* border: black !important; */
+      text-shadow: 1px 1px black !important;
+    }
+
+    header.masthead {
+      padding-top: calc(6rem + 72px);
+      padding-bottom: 6rem;
+    }
+
+    .clip {
+      padding: 15px;
+    }
+
+    hr.star-light,
+    hr.star-dark {
+      max-width: 15rem;
+      padding: 0;
+      text-align: center;
+      border: none;
+      border-top: solid 0.25rem;
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    hr.star-light:after,
+    hr.star-dark:after {
+      position: relative;
+      top: -.8em;
+      display: inline-block;
+      padding: 0 0.25em;
+      content: '\f130';
+      font-family: FontAwesome;
+      font-size: 2em;
+    }
+
+    hr.star-light {
+      border-color: #fff;
+    }
+
+    hr.star-light:after {
+      color: #fff;
+      background-color: #7BC6AA;
+    }
+
+    hr.star-dark {
+      border-color: #2C3E50;
+    }
+
+    hr.star-dark:after {
+      color: #2C3E50;
+      background-color: white;
+    }
+
+
+    section {
+      padding: 6rem 0;
+    }
+
+    footer {
+      background-color: #73726C !important;
+    }
+
+    .copyright {
+      background-color: rgb(56, 56, 56);
+    }
