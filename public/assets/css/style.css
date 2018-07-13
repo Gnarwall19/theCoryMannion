@@ -1,3 +1,8 @@
+    #widget body {
+      background: purple !important;
+    }
+
+
     #navMain {
       padding-top: 1rem;
       padding-bottom: 1rem;
@@ -93,3 +98,39 @@
     .copyright {
       background-color: rgb(56, 56, 56);
     }
+
+
+    /* Needs to be cleaned up!! */
+    @media (min-width: 992px) {
+  #navMain {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+  }
+  #navMain .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: font-size 0.3s;
+    -moz-transition: font-size 0.3s;
+    transition: font-size 0.3s;
+  }
+  #navMain .navbar-nav {
+    margin-top: 0;
+  }
+  #navMain .navbar-nav > li.nav-item > a.nav-link.active {
+    color: #fff;
+    background: #18BC9C;
+  }
+  #navMain .navbar-nav > li.nav-item > a.nav-link.active:active, #navMain .navbar-nav > li.nav-item > a.nav-link.active:focus, #navMain .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    color: #fff;
+    background: #18BC9C;
+  }
+  #navMain.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  #navMain.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+}
