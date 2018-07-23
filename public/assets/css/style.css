@@ -1,5 +1,7 @@
-    #widget body {
-      background: purple !important;
+    #audio-clips {
+      border: 3px solid #0452FE;
+      border-radius: 5px;
+      background: rgba(243, 241, 241, 0.925);
     }
 
 
@@ -10,18 +12,34 @@
       background-color: #73726C !important;
     }
 
+    h1 {
+      color: white !important;
+      font-weight: bold !important;
+    }
+
+    
+    #bullets,
+    #about {
+      color: white;
+    }
+
     #home,
     #about {
-      background-color: #7BC6AA !important;
+      background-image: url("../images/stardust.png") !important;
     }
 
     #profile-picture {
       border: solid 2px white;
+      border-radius: 5px;
     }
 
     .portfolio-item {
       border: 1px solid black;
       margin: 25px;
+    }
+
+    .footer {
+    padding-top: 25px;
     }
 
     .btn-social {
@@ -74,7 +92,7 @@
 
     hr.star-light:after {
       color: #fff;
-      background-color: #7BC6AA;
+      background-color: rgb(69, 67, 74);
     }
 
     hr.star-dark {
@@ -89,6 +107,14 @@
 
     section {
       padding: 6rem 0;
+    }
+
+    .some-info {
+      color: white !important;
+    }
+
+    i {
+      color: orange;
     }
 
     footer {
