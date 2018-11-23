@@ -125,6 +125,10 @@
       background-color: rgb(56, 56, 56);
     }
 
+    /* .footer-txt {
+      font-size: 12px !important;
+    } */
+
 
     /* Needs to be cleaned up!! */
     @media (min-width: 992px) {

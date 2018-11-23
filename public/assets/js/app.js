@@ -11,6 +11,7 @@ $(function () {
   var navbarCollapse = function () {
     if ($("#navMain").offset().top > 100) {
       $("#navMain").addClass("navbar-shrink");
+      console.log("should shrink");
     } else {
       $("#navMain").removeClass("navbar-shrink");
     }
@@ -21,3 +22,10 @@ $(function () {
   $(window).scroll(navbarCollapse);
 
 });
+
+
+
+
+
+
+
