@@ -33,7 +33,7 @@ app.post('/contact', (req, res) => {
 
   let mailOptions = {
     from: req.body.email,
-    to: process.env.GMAIL_USER,
+    to: 'corymann77@gmail.com',
     subject: `New Contact From Your Web Page`,
     text: req.body.message
   };
@@ -52,7 +52,7 @@ app.post('/contact', (req, res) => {
 
 
   client.messages.create({
-    to: process.env.TWILIO_RECIEVER,
+    to: '+17049574537',
     from: process.env.TWILIO_SENDER,
     body: `${req.body.email} has expressed interest in contacting you!`
   });
